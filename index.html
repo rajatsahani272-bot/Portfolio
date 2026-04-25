@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Rajat Sahani — Full Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Syne:wght@400;600;700&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<div id="particles-js"></div>
+<div class="grid-bg"></div>
+
+<nav id="navbar">
+  <div class="nav-logo">RS_</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#achievements">Wins</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="mailto:rajatsahani272@gmail.com" class="nav-cta">Hire Me</a>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<section id="hero">
+  <div class="hero-orb-wrap">
+    <div class="hero-orb">
+      <div class="orb-ring r1"></div>
+      <div class="orb-ring r2"></div>
+      <div class="orb-ring r3"></div>
+      <div class="orb-core"></div>
+      <div class="orb-dot d1"></div>
+      <div class="orb-dot d2"></div>
+      <div class="orb-dot d3"></div>
+      <div class="orb-dot d4"></div>
+    </div>
+  </div>
+  <div class="hero-content">
+    <p class="hero-label" id="hl">Available for opportunities</p>
+    <h1 class="hero-name" id="hn">
+      <span class="line1">Rajat</span>
+      <span class="line2">Sahani</span>
+    </h1>
+    <div class="typing-wrap" id="tw">
+      <span id="typed-text"></span><span class="cursor-blink"></span>
+    </div>
+    <div class="hero-btns" id="hb">
+      <a href="#projects" class="btn-primary">View Projects</a>
+      <a href="#contact" class="btn-secondary">Let's Talk</a>
+    </div>
+    <div class="hero-stats" id="hs">
+      <div class="stat-item">
+        <span class="stat-num" data-count="6">0</span>
+        <span class="stat-label">Projects</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num" data-count="3">0</span>
+        <span class="stat-label">Hackathons</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num" data-count="4">0</span>
+        <span class="stat-label">Tech Stacks</span>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="section-header reveal">
+    <span class="section-num">01 /</span>
+    <h2 class="section-title">About</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p>I'm a <strong>Computer Science Engineering student</strong> and passionate Full Stack Developer specializing in the <strong>MERN stack</strong>. My work lives at the intersection of clean architecture and intuitive UI.</p>
+      <p>I'm also an aspiring <strong>AI/ML engineer</strong>, actively building and shipping real-world applications that solve genuine problems. From hospital systems to student productivity — I build things that matter.</p>
+      <p>Currently exploring the frontier of intelligent systems and scalable backends, preparing to contribute to teams that push boundaries.</p>
+    </div>
+    <div class="about-card reveal">
+      <div class="about-card-item">
+        <div class="aci-icon">🎓</div>
+        <div class="aci-info">
+          <h4>Education</h4>
+          <p>Computer Science Engineering — Undergraduate</p>
+        </div>
+      </div>
+      <div class="about-card-item">
+        <div class="aci-icon">⚡</div>
+        <div class="aci-info">
+          <h4>Specialization</h4>
+          <p>MERN Stack · Full Stack Development · AI/ML Integration</p>
+        </div>
+      </div>
+      <div class="about-card-item">
+        <div class="aci-icon">🏆</div>
+        <div class="aci-info">
+          <h4>Recognition</h4>
+          <p>3rd Rank — College Hackathon · SIH 2025 · Hackcraft 3.0</p>
+        </div>
+      </div>
+      <div class="about-card-item">
+        <div class="aci-icon">🚀</div>
+        <div class="aci-info">
+          <h4>Focus</h4>
+          <p>Building scalable, impactful applications with modern tech</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="section-header reveal">
+    <span class="section-num">02 /</span>
+    <h2 class="section-title">Skills</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="skills-grid">
+    <div class="skill-category reveal">
+      <div class="skill-cat-title">MERN Stack</div>
+      <div class="skill-bar-wrap">
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>MongoDB</span><span>88%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Express.js</span><span>85%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>React.js</span><span>90%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Node.js</span><span>87%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="87"></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="skill-category reveal">
+      <div class="skill-cat-title">Languages</div>
+      <div class="skill-tags">
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Java</span>
+        <span class="skill-tag">C</span>
+        <span class="skill-tag">HTML5</span>
+        <span class="skill-tag">CSS3</span>
+      </div>
+    </div>
+    <div class="skill-category reveal">
+      <div class="skill-cat-title">Tools & Platforms</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">VS Code</span>
+        <span class="skill-tag">Netlify</span>
+        <span class="skill-tag">Vercel</span>
+        <span class="skill-tag">GitHub</span>
+        <span class="skill-tag">REST APIs</span>
+      </div>
+    </div>
+    <div class="skill-category reveal">
+      <div class="skill-cat-title">Currently Learning</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Machine Learning</span>
+        <span class="skill-tag">TensorFlow</span>
+        <span class="skill-tag">TypeScript</span>
+        <span class="skill-tag">Docker</span>
+        <span class="skill-tag">System Design</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="section-header reveal">
+    <span class="section-num">03 /</span>
+    <h2 class="section-title">Projects</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="projects-grid">
+    <div class="project-card reveal">
+      <div class="project-num">PROJECT_01</div>
+      <h3>YouTube Clone</h3>
+      <p>Full-featured video platform clone with responsive layout, channel pages, and smooth video playback UI mimicking production-grade streaming interfaces.</p>
+      <div class="project-tags">
+        <span class="project-tag">React</span>
+        <span class="project-tag">CSS3</span>
+        <span class="project-tag">API</span>
+      </div>
+      <div class="project-btns">
+        <a href="#" class="project-btn live">Live ↗</a>
+        <a href="https://github.com/rajatsahani272-bot" class="project-btn code">Code &lt;/&gt;</a>
+      </div>
+    </div>
+    <div class="project-card reveal">
+      <div class="project-num">PROJECT_02</div>
+      <h3>Spotify Clone</h3>
+      <p>Audio player UI with rich animations, playlist management, progress bar controls, and a pixel-perfect recreation of Spotify's signature dark interface.</p>
+      <div class="project-tags">
+        <span class="project-tag">HTML</span>
+        <span class="project-tag">CSS</span>
+        <span class="project-tag">JavaScript</span>
+      </div>
+      <div class="project-btns">
+        <a href="#" class="project-btn live">Live ↗</a>
+        <a href="https://github.com/rajatsahani272-bot" class="project-btn code">Code &lt;/&gt;</a>
+      </div>
+    </div>
+    <div class="project-card reveal">
+      <div class="project-num">PROJECT_03</div>
+      <h3>Student Help & Resource Platform</h3>
+      <p>Centralized platform for students to access curated academic resources, notes, and community help — built to reduce academic friction.</p>
+      <div class="project-tags">
+        <span class="project-tag">MERN</span>
+        <span class="project-tag">MongoDB</span>
+        <span class="project-tag">Auth</span>
+      </div>
+      <div class="project-btns">
+        <a href="#" class="project-btn live">Live ↗</a>
+        <a href="https://github.com/rajatsahani272-bot" class="project-btn code">Code &lt;/&gt;</a>
+      </div>
+    </div>
+    <div class="project-card reveal">
+      <div class="project-num">PROJECT_04</div>
+      <h3>BedSync</h3>
+      <p>Real-time hospital bed tracking system enabling patients and staff to monitor availability, request beds, and manage hospital resources efficiently.</p>
+      <div class="project-tags">
+        <span class="project-tag">Node.js</span>
+        <span class="project-tag">MongoDB</span>
+        <span class="project-tag">Real-time</span>
+      </div>
+      <div class="project-btns">
+        <a href="#" class="project-btn live">Live ↗</a>
+        <a href="https://github.com/rajatsahani272-bot" class="project-btn code">Code &lt;/&gt;</a>
+      </div>
+    </div>
+    <div class="project-card reveal">
+      <div class="project-num">PROJECT_05</div>
+      <h3>StudySync</h3>
+      <p>Student productivity application featuring task scheduling, progress tracking, study timers, and collaborative tools to maximize academic performance.</p>
+      <div class="project-tags">
+        <span class="project-tag">React</span>
+        <span class="project-tag">Express</span>
+        <span class="project-tag">MongoDB</span>
+      </div>
+      <div class="project-btns">
+        <a href="#" class="project-btn live">Live ↗</a>
+        <a href="https://github.com/rajatsahani272-bot" class="project-btn code">Code &lt;/&gt;</a>
+      </div>
+    </div>
+    <div class="project-card reveal">
+      <div class="project-num">PROJECT_06</div>
+      <h3>Task Manager</h3>
+      <p>Secure production-grade CRUD backend with JWT authentication, role-based access, full REST API design, and hardened security middleware.</p>
+      <div class="project-tags">
+        <span class="project-tag">Node.js</span>
+        <span class="project-tag">JWT</span>
+        <span class="project-tag">Security</span>
+      </div>
+      <div class="project-btns">
+        <a href="#" class="project-btn live">Live ↗</a>
+        <a href="https://github.com/rajatsahani272-bot" class="project-btn code">Code &lt;/&gt;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="achievements">
+  <div class="section-header reveal">
+    <span class="section-num">04 /</span>
+    <h2 class="section-title">Achievements</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="timeline">
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <span class="timeline-badge">HACKCRAFT 3.0 · 2026</span>
+        <h3>Hackcraft 3.0 Participant</h3>
+        <p>Competed in Hackcraft 3.0, a premier national-level hackathon. Developed and pitched an innovative solution within 24 hours, demonstrating rapid prototyping and full-stack capabilities under pressure.</p>
+      </div>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <span class="timeline-badge">SIH · 2025</span>
+        <h3>Smart India Hackathon 2025</h3>
+        <p>Selected participant in Smart India Hackathon 2025 — India's largest national-level hackathon. Competed with a team to solve real government problem statements using technology-driven solutions.</p>
+      </div>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <span class="timeline-badge">🏆 3RD RANK · COLLEGE</span>
+        <h3>3rd Rank — College Hackathon</h3>
+        <p>Secured 3rd position in the college-level hackathon. Designed and deployed a full-stack project that impressed judges with its technical depth, real-world applicability, and presentation quality.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-header reveal">
+    <span class="section-num">05 /</span>
+    <h2 class="section-title">Contact</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="contact-wrap">
+    <div class="contact-info reveal">
+      <h3>Let's Build Something.</h3>
+      <p>Open to internships, collaborations, and full-time opportunities. If you have a project worth building or a team worth joining — reach out.</p>
+      <div class="contact-links">
+        <a href="mailto:rajatsahani272@gmail.com" class="contact-link">
+          <div class="cl-icon">✉️</div>
+          <span class="cl-text">rajatsahani272@gmail.com</span>
+        </a>
+        <a href="tel:9682446942" class="contact-link">
+          <div class="cl-icon">📱</div>
+          <span class="cl-text">+91 9682446942</span>
+        </a>
+        <a href="https://github.com/rajatsahani272-bot" target="_blank" class="contact-link">
+          <div class="cl-icon">🐙</div>
+          <span class="cl-text">github.com/rajatsahani272-bot</span>
+        </a>
+        <a href="https://www.linkedin.com/in/rajat-sahani-705044372" target="_blank" class="contact-link">
+          <div class="cl-icon">💼</div>
+          <span class="cl-text">linkedin.com/in/rajat-sahani</span>
+        </a>
+        <a href="https://wa.me/9682446942" target="_blank" class="contact-link">
+          <div class="cl-icon">💬</div>
+          <span class="cl-text">WhatsApp me</span>
+        </a>
+      </div>
+    </div>
+    <div class="contact-form reveal">
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" placeholder="Your name"/>
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" placeholder="your@email.com"/>
+      </div>
+      <div class="form-group">
+        <label>Subject</label>
+        <input type="text" placeholder="What's this about?"/>
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea placeholder="Your message here..."></textarea>
+      </div>
+      <button class="form-submit" onclick="handleSubmit(this)">Send Message →</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Designed & Built by <span>Rajat Sahani</span> · © 2026 · All systems operational</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
