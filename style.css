@@ -110,3 +110,26 @@ body{background:var(--paper);color:var(--ink);background-image:radial-gradient(e
 @media(hover:hover) and (pointer:fine){.pointer-glow{opacity:1}.project-card{transform-style:preserve-3d}.project-card:hover .project-card-body{transform:translateZ(8px)}}
 @media(max-width:700px){.hero{min-height:0;padding-top:75px}.hero-visual:before{width:270px;height:270px}.visual-card-main{animation:none}.floating-note{animation:none}.hero h1{font-size:clamp(46px,11.5vw,70px)}.site-nav{background:#11140f;border-color:#30372c}.site-nav a{color:#d7dfcf}.nav-contact{color:#f3f6ed;background:#20251d}.projects-grid .project-card:nth-child(n){transition-delay:0ms}.contact-panel{background:linear-gradient(145deg,#20281c,#11140f)}}
 @media(prefers-reduced-motion:reduce){.hero-visual:before,.visual-card-main,.floating-note{animation:none!important}.reveal{opacity:1;transform:none;filter:none}.section-heading h2 span:after{transform:scaleX(1)}.scroll-progress,.pointer-glow{display:none}}
+
+
+/* Certificates & achievements */
+.certificates-section{padding-top:100px;padding-bottom:110px}
+.certificates-toolbar{display:flex;justify-content:space-between;align-items:center;gap:16px;border-bottom:1px solid var(--line);padding-bottom:15px;margin-bottom:20px;color:#a2ac98;font-size:9px}
+.certificates-toolbar>span{display:flex;align-items:center;gap:10px}
+.certificates-toolbar .status-dot{width:6px;height:6px;box-shadow:none}
+.certificates-toolbar>a{color:#e2eadb;font:600 11px var(--sans)}
+.certificates-toolbar>a span{margin-left:8px;color:var(--accent)}
+.certificates-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.certificate-card{display:grid;grid-template-columns:62px minmax(0,1fr);gap:18px;padding:22px;background:#171b15;border:1px solid #30372b;border-radius:10px;min-width:0;transition:transform .3s,border-color .3s,box-shadow .3s}
+.certificate-card:hover{transform:translateY(-4px);border-color:#819c5c;box-shadow:0 18px 45px #0005}
+.certificate-mark{width:58px;height:58px;display:grid;place-items:center;border-radius:9px;background:linear-gradient(145deg,#273321,#1b2117);border:1px solid #3a4930;color:var(--accent);font:700 15px var(--mono);letter-spacing:-.05em}
+.certificate-content{min-width:0;display:flex;flex-direction:column;align-items:flex-start}
+.certificate-meta{width:100%;display:flex;justify-content:space-between;gap:10px;color:#9ca891;font:9px var(--mono);letter-spacing:.06em}
+.certificate-content h3{font:700 16px/1.45 var(--display);letter-spacing:-.035em;color:#f2f5eb;margin:12px 0 7px}
+.certificate-content p{font-size:11px;color:#a8b0a0;line-height:1.6;margin-bottom:10px}
+.credential-id{font:9px/1.6 var(--mono);color:#87927d;overflow-wrap:anywhere;margin-bottom:16px}
+.certificate-link{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;padding-top:12px;border-top:1px solid #30372c;color:#e4ebdc;font-size:10px;font-weight:600}
+.certificate-link span{font-size:15px;color:var(--accent);transition:transform .2s}
+.certificate-link:hover span{transform:translate(3px,-3px)}
+.certificates-note{margin-top:18px;font-size:10px;line-height:1.8;color:#8f9985}
+@media(max-width:700px){.certificates-section{padding-top:75px;padding-bottom:75px}.certificates-grid{grid-template-columns:1fr}.certificate-card{grid-template-columns:48px minmax(0,1fr);gap:13px;padding:17px}.certificate-mark{width:46px;height:46px}.certificate-content h3{font-size:15px}.certificates-toolbar{align-items:flex-start;flex-direction:column}}
