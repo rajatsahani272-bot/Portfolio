@@ -525,6 +525,20 @@ section{
 
 #projects{background:linear-gradient(180deg,var(--bg) 0%,var(--bg2) 100%);}
 
+.projects-intro{
+  margin:-40px 0 36px;
+  color:var(--text-dim);
+  font-size:0.9rem;
+  line-height:1.7;
+}
+
+.projects-intro a{
+  color:var(--neon);
+  text-decoration:none;
+}
+
+.projects-intro a:hover{text-decoration:underline;}
+
 .projects-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
