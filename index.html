@@ -1,387 +1,115 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Rajat Sahani — Full Stack Developer</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Syne:wght@400;600;700&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f4">
+  <meta name="description" content="Rajat Sahani is a full-stack developer building thoughtful web products and exploring applied AI/ML. Explore projects, skills, and ways to connect.">
+  <title>Rajat Sahani — Full-Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-
-<div id="cursor"></div>
-<div id="cursor-ring"></div>
-<div id="particles-js"></div>
-<div class="grid-bg"></div>
-
-<nav id="navbar">
-  <div class="nav-logo">RS_</div>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#achievements">Wins</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <a href="mailto:rajatsahani272@gmail.com" class="nav-cta">Hire Me</a>
-  <div class="hamburger" onclick="toggleMenu()">
-    <span></span><span></span><span></span>
-  </div>
-</nav>
-
-<section id="hero">
-  <div class="hero-orb-wrap">
-    <div class="hero-orb">
-      <div class="orb-ring r1"></div>
-      <div class="orb-ring r2"></div>
-      <div class="orb-ring r3"></div>
-      <div class="orb-core"></div>
-      <div class="orb-dot d1"></div>
-      <div class="orb-dot d2"></div>
-      <div class="orb-dot d3"></div>
-      <div class="orb-dot d4"></div>
-    </div>
-  </div>
-  <div class="hero-content">
-    <p class="hero-label" id="hl">Available for opportunities</p>
-    <h1 class="hero-name" id="hn">
-      <span class="line1">Rajat</span>
-      <span class="line2">Sahani</span>
-    </h1>
-    <div class="typing-wrap" id="tw">
-      <span id="typed-text"></span><span class="cursor-blink"></span>
-    </div>
-    <div class="hero-btns" id="hb">
-      <a href="#projects" class="btn-primary">View Projects</a>
-      <a href="#contact" class="btn-secondary">Let's Talk</a>
-    </div>
-    <div class="hero-stats" id="hs">
-      <div class="stat-item">
-        <span class="stat-num" data-count="6">0</span>
-        <span class="stat-label">Projects</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-num" data-count="3">0</span>
-        <span class="stat-label">Hackathons</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-num" data-count="4">0</span>
-        <span class="stat-label">Tech Stacks</span>
-      </div>
-    </div>
-  </div>
-  <div class="scroll-indicator">
-    <div class="scroll-line"></div>
-  </div>
-</section>
-
-<section id="about">
-  <div class="section-header reveal">
-    <span class="section-num">01 /</span>
-    <h2 class="section-title">About</h2>
-    <div class="section-line"></div>
-  </div>
-  <div class="about-grid">
-    <div class="about-text reveal">
-      <p>I'm a <strong>Computer Science Engineering student</strong> and passionate Full Stack Developer specializing in the <strong>MERN stack</strong>. My work lives at the intersection of clean architecture and intuitive UI.</p>
-      <p>I'm also an aspiring <strong>AI/ML engineer</strong>, actively building and shipping real-world applications that solve genuine problems. From hospital systems to student productivity — I build things that matter and publish consistently on GitHub.</p>
-      <p>Currently exploring the frontier of intelligent systems and scalable backends, preparing to contribute to teams that push boundaries.</p>
-    </div>
-    <div class="about-card reveal">
-      <div class="about-card-item">
-        <div class="aci-icon">🎓</div>
-        <div class="aci-info">
-          <h4>Education</h4>
-          <p>Computer Science Engineering — Undergraduate</p>
+  <div class="site-shell">
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Rajat Sahani home"><span class="brand-mark">rs.</span><span class="brand-name">Rajat Sahani</span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav"><span></span><span></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="#about">About</a><a href="#skills">Stack</a><a href="#projects">Projects</a><a href="#experience">Highlights</a>
+        <a class="nav-contact" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero section-wrap">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="status-dot"></span> Open to internships & collaborations</div>
+          <p class="hero-kicker">FULL-STACK DEVELOPER · AI/ML EXPLORER</p>
+          <h1>I build digital products<br>with <span>purpose.</span></h1>
+          <p class="hero-description">I'm Rajat — a Computer Science Engineering student who enjoys turning real problems into useful, thoughtfully designed software. I work across the web stack and am exploring practical AI/ML systems.</p>
+          <div class="hero-actions"><a class="button button-dark" href="#projects">Explore my work <span>↘</span></a><a class="text-link" href="mailto:rajatsahani272@gmail.com">Get in touch <span>↗</span></a></div>
+          <div class="hero-meta"><span>Based in Lucknow, India</span><span class="meta-separator"></span><span>Building · Learning · Shipping</span></div>
         </div>
-      </div>
-      <div class="about-card-item">
-        <div class="aci-icon">⚡</div>
-        <div class="aci-info">
-          <h4>Specialization</h4>
-          <p>MERN Stack · Full Stack Development · AI/ML Integration</p>
+        <div class="hero-visual" aria-label="Developer profile illustration">
+          <div class="visual-topline"><span>SELECTED WORK / 2026</span><span>01 — 04</span></div>
+          <div class="visual-card-main">
+            <div class="code-window"><div class="window-controls"><i></i><i></i><i></i></div><span>developer.ts</span><span class="window-language">TS</span></div>
+            <div class="code-content">
+              <p><span class="code-muted">01</span> <span class="code-purple">const</span> <span class="code-blue">developer</span> = {</p>
+              <p class="code-indent"><span class="code-green">name</span>: <span class="code-orange">'Rajat Sahani'</span>,</p>
+              <p class="code-indent"><span class="code-green">focus</span>: [</p>
+              <p class="code-indent code-more"><span class="code-orange">'Full-stack'</span>,</p>
+              <p class="code-indent code-more"><span class="code-orange">'AI / ML'</span>,</p>
+              <p class="code-indent code-more"><span class="code-orange">'System design'</span></p>
+              <p class="code-indent">],</p>
+              <p class="code-indent"><span class="code-green">mindset</span>: <span class="code-orange">'Build with purpose'</span></p>
+              <p>};</p><p class="code-comment">// always learning, always shipping.</p>
+            </div>
+          </div>
+          <div class="floating-note note-one"><span class="note-icon">✳</span><span><strong>Curious by default</strong><small>Engineering mindset</small></span></div>
+          <div class="floating-note note-two"><span class="note-icon note-icon-dark">↗</span><span><strong>Ideas into products</strong><small>From UI to APIs</small></span></div>
+          <div class="visual-bottomline"><span>REACT / NODE / PYTHON</span><span>CRAFTED WITH CARE</span></div>
         </div>
-      </div>
-      <div class="about-card-item">
-        <div class="aci-icon">🏆</div>
-        <div class="aci-info">
-          <h4>Recognition</h4>
-          <p>3rd Rank — College Hackathon · SIH 2025 · Hackcraft 3.0</p>
+        <a class="scroll-cue" href="#about"><span></span> SCROLL TO EXPLORE</a>
+      </section>
+      <section class="intro-strip" aria-label="What I do"><div class="section-wrap strip-inner"><span>WHAT I DO</span><p>Build reliable web experiences, design maintainable backends, and experiment with intelligent systems.</p><span class="strip-index">01 / 04</span></div></section>
+      <section class="section-wrap content-section" id="about">
+        <div class="section-heading reveal"><div><p class="section-label">A LITTLE ABOUT ME</p><h2>Engineering meets<br><span>curiosity.</span></h2></div><p class="section-aside">Good software is more than code. It's a clear solution to a real need.</p></div>
+        <div class="about-layout">
+          <div class="about-copy reveal"><p class="lead-copy">I'm a Computer Science Engineering student focused on full-stack development, with a growing interest in AI/ML and the systems that make software dependable at scale.</p><p>I enjoy working end to end — from shaping a clean interface to designing APIs, handling data, and deploying an application. My projects are a place to practice engineering fundamentals while building things people can actually use.</p><p>Right now, I'm strengthening my JavaScript and Python foundations, exploring applied machine learning, and learning more about deployment, security, and system design.</p><a class="inline-link" href="https://github.com/rajatsahani272-bot" target="_blank" rel="noreferrer">Explore my GitHub <span>↗</span></a></div>
+          <div class="about-facts reveal">
+            <div class="fact-row"><span class="fact-number">01</span><div><h3>Full-stack development</h3><p>Responsive interfaces, REST APIs, authentication, and database-backed applications.</p></div></div>
+            <div class="fact-row"><span class="fact-number">02</span><div><h3>Applied AI/ML</h3><p>Exploring practical model integration, image analysis, OCR, and AI-assisted workflows.</p></div></div>
+            <div class="fact-row"><span class="fact-number">03</span><div><h3>Product thinking</h3><p>Start with the user problem, keep the scope clear, and ship a useful solution.</p></div></div>
+          </div>
         </div>
-      </div>
-      <div class="about-card-item">
-        <div class="aci-icon">🚀</div>
-        <div class="aci-info">
-          <h4>Focus</h4>
-          <p>Building scalable, impactful applications with modern tech</p>
+      </section>
+      <section class="skills-section" id="skills"><div class="section-wrap content-section">
+        <div class="section-heading reveal"><div><p class="section-label">TOOLS OF THE TRADE</p><h2>My working <span>stack.</span></h2></div><p class="section-aside">A growing toolkit, chosen to solve problems — not just to collect logos.</p></div>
+        <div class="stack-grid">
+          <article class="stack-card reveal"><span class="stack-index">01</span><h3>Frontend</h3><p>Interfaces that feel clear, responsive, and intuitive.</p><div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Vite</span><span>Redux Toolkit</span></div></article>
+          <article class="stack-card reveal"><span class="stack-index">02</span><h3>Backend & data</h3><p>APIs and application logic with maintainability in mind.</p><div class="tag-list"><span>Node.js</span><span>Express</span><span>MongoDB</span><span>REST APIs</span><span>JWT</span><span>Python</span></div></article>
+          <article class="stack-card reveal"><span class="stack-index">03</span><h3>AI / ML</h3><p>Learning to integrate intelligent capabilities into useful products.</p><div class="tag-list"><span>PyTorch</span><span>scikit-learn</span><span>Transformers</span><span>OCR</span><span>FastAPI</span></div></article>
+          <article class="stack-card reveal"><span class="stack-index">04</span><h3>Engineering tools</h3><p>Version control, containers, testing, and deployment workflows.</p><div class="tag-list"><span>Git</span><span>GitHub</span><span>Docker</span><span>GitHub Actions</span><span>Render</span><span>Cloudinary</span></div></article>
+        </div><p class="stack-note">Skills are actively evolving; tags reflect tools I've used or am currently learning through projects.</p>
+      </div></section>
+      <section class="section-wrap content-section projects-section" id="projects">
+        <div class="section-heading reveal"><div><p class="section-label">SELECTED BUILDS</p><h2>Projects with a <span>purpose.</span></h2></div><p class="section-aside">A collection of full-stack applications, experiments, and frontend builds. Open each repository for the source.</p></div>
+        <div class="project-toolbar reveal"><span><span class="status-dot"></span> PROJECT INDEX</span><a href="https://github.com/rajatsahani272-bot?tab=repositories" target="_blank" rel="noreferrer">All repositories <span>↗</span></a></div>
+        <div class="projects-grid">
+          <article class="project-card project-featured reveal"><div class="project-card-top"><span class="project-category">AI / COMPUTER VISION</span><span class="project-number">01</span></div><div class="project-art art-proof"><span class="art-orbit orbit-a"></span><span class="art-orbit orbit-b"></span><span class="art-center">P<span>·</span></span><span class="art-caption">EVIDENCE / ANALYSIS / TRUST</span></div><div class="project-card-body"><h3>ProofLens AI</h3><p>An image-verification project combining image forensics, metadata signals, OCR, perceptual hashing, and an AI-image detection workflow to help users assess visual claims with evidence.</p><div class="tag-list"><span>Python</span><span>PyTorch</span><span>FastAPI</span><span>Node.js</span><span>React</span></div><a class="project-link" href="https://github.com/rajatsahani272-bot/ProofLensAI" target="_blank" rel="noreferrer">Explore repository <span>↗</span></a></div></article>
+          <article class="project-card reveal"><div class="project-card-top"><span class="project-category">FULL-STACK COMMERCE</span><span class="project-number">02</span></div><div class="project-art art-commerce"><span class="art-label">SHOP / DISCOVER / CHECKOUT</span><div class="commerce-shapes"><i></i><i></i><i></i></div></div><div class="project-card-body"><h3>E-Commerce Website</h3><p>A MERN shopping application with product browsing and commerce flows, backed by an Express API and MongoDB. Built with attention to authentication and deployment.</p><div class="tag-list"><span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span></div><a class="project-link" href="https://github.com/rajatsahani272-bot/E-Commerce-Website" target="_blank" rel="noreferrer">Explore repository <span>↗</span></a></div></article>
+          <article class="project-card reveal"><div class="project-card-top"><span class="project-category">EDTECH / COMMUNITY</span><span class="project-number">03</span></div><div class="project-art art-student"><span class="art-label">LEARN TOGETHER</span><div class="student-panels"><i></i><i></i><i></i></div></div><div class="project-card-body"><h3>Student Help Platform</h3><p>A centralized space for students to access academic resources and learning support, with a focus on making useful study material easier to discover.</p><div class="tag-list"><span>MERN</span><span>MongoDB</span><span>Web development</span></div><a class="project-link" href="https://github.com/rajatsahani272-bot/student-help-plateform" target="_blank" rel="noreferrer">Explore repository <span>↗</span></a></div></article>
+          <article class="project-card reveal"><div class="project-card-top"><span class="project-category">PRODUCTIVITY</span><span class="project-number">04</span></div><div class="project-art art-study"><span class="study-clock">25<span>:00</span></span><span class="art-label">FOCUS / TRACK / IMPROVE</span></div><div class="project-card-body"><h3>StudySync</h3><p>A student productivity project built around organizing study sessions and creating more consistent learning routines.</p><div class="tag-list"><span>JavaScript</span><span>Web app</span><span>Productivity</span></div><a class="project-link" href="https://github.com/rajatsahani272-bot/Study-Sync" target="_blank" rel="noreferrer">Explore repository <span>↗</span></a></div></article>
+          <article class="project-card reveal"><div class="project-card-top"><span class="project-category">CERTIFICATE WORKFLOW</span><span class="project-number">05</span></div><div class="project-art art-cert"><div class="cert-sheet"><span>VERIFIED</span><i></i><i></i><i></i></div><span class="art-label">ISSUE / SHARE / VERIFY</span></div><div class="project-card-body"><h3>Certify — Certificate Issuance</h3><p>A certificate issuance application with a React frontend and Node.js backend, using Cloudinary for certificate-related asset handling.</p><div class="tag-list"><span>React</span><span>Node.js</span><span>Cloudinary</span></div><a class="project-link" href="https://github.com/rajatsahani272-bot/Cerificate-Isuuse-app" target="_blank" rel="noreferrer">Explore repository <span>↗</span></a></div></article>
+          <article class="project-card reveal"><div class="project-card-top"><span class="project-category">MESSAGING</span><span class="project-number">06</span></div><div class="project-art art-chat"><div class="chat-bubble bubble-left"></div><div class="chat-bubble bubble-right"></div><span class="art-label">PRIVATE / ONE-TO-ONE</span></div><div class="project-card-body"><h3>Close Chat</h3><p>A friends-focused one-to-one messaging app concept centered on private conversations and a simple, direct chat experience.</p><div class="tag-list"><span>Web application</span><span>Messaging</span><span>In progress</span></div><a class="project-link" href="https://github.com/rajatsahani272-bot/Close-Chat" target="_blank" rel="noreferrer">Explore repository <span>↗</span></a></div></article>
+          <article class="project-card reveal"><div class="project-card-top"><span class="project-category">AI / HACKATHON</span><span class="project-number">07</span></div><div class="project-art art-aegis"><span class="aegis-symbol">A</span><span class="art-label">AI × WEB3 × FUTURE TECH</span></div><div class="project-card-body"><h3>AegisAI — FutureTech</h3><p>A hackathon project repository for an AI and Web3-focused innovation track, bringing together emerging technology and product-problem exploration.</p><div class="tag-list"><span>AI</span><span>Web3</span><span>Hackathon</span></div><a class="project-link" href="https://github.com/rajatsahani272-bot/ai-web3-futuretech-hackathon-2026-lucknow-aegisai" target="_blank" rel="noreferrer">Explore repository <span>↗</span></a></div></article>
+          <article class="project-card reveal"><div class="project-card-top"><span class="project-category">HOSPITALITY / LISTINGS</span><span class="project-number">08</span></div><div class="project-art art-stay"><div class="stay-block stay-one"></div><div class="stay-block stay-two"></div><div class="stay-block stay-three"></div><span class="art-label">FIND A PLACE TO STAY</span></div><div class="project-card-body"><h3>Airbnb Clone</h3><p>A lodging-listing web application inspired by Airbnb, exploring property discovery and the core patterns of a booking marketplace.</p><div class="tag-list"><span>Web development</span><span>JavaScript</span><span>Marketplace UI</span></div><a class="project-link" href="https://github.com/rajatsahani272-bot/Air-BNB-Clone" target="_blank" rel="noreferrer">Explore repository <span>↗</span></a></div></article>
+          <article class="project-card reveal"><div class="project-card-top"><span class="project-category">FINTECH / DASHBOARD</span><span class="project-number">09</span></div><div class="project-art art-zerodha"><span class="chart-line">↗</span><span class="art-label">MARKETS / PORTFOLIO / INSIGHTS</span></div><div class="project-card-body"><h3>Zerodha</h3><p>A trading-platform-inspired project exploring financial dashboard interfaces and the user flows of an online investing product.</p><div class="tag-list"><span>Web development</span><span>Fintech UI</span><span>JavaScript</span></div><a class="project-link" href="https://github.com/rajatsahani272-bot/Zerodha" target="_blank" rel="noreferrer">Explore repository <span>↗</span></a></div></article>
+          <article class="project-card reveal"><div class="project-card-top"><span class="project-category">BACKEND / FINANCE</span><span class="project-number">10</span></div><div class="project-art art-bank"><span class="bank-symbol">₹</span><span class="art-label">ACCOUNTS / TRANSACTIONS / APIs</span></div><div class="project-card-body"><h3>Bank Backend</h3><p>A backend-focused banking project for practicing server-side application structure and financial-service workflows.</p><div class="tag-list"><span>Backend</span><span>APIs</span><span>JavaScript</span></div><a class="project-link" href="https://github.com/rajatsahani272-bot/Bank-Backend" target="_blank" rel="noreferrer">Explore repository <span>↗</span></a></div></article>
+          <article class="project-card reveal"><div class="project-card-top"><span class="project-category">MEDIA UI</span><span class="project-number">11</span></div><div class="project-art art-youtube"><span class="play-button">▶</span><span class="art-label">WATCH / DISCOVER / PLAY</span></div><div class="project-card-body"><h3>YouTube Clone</h3><p>A video-platform-inspired interface exploring content discovery, familiar media layouts, and responsive page design.</p><div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a class="project-link" href="https://github.com/rajatsahani272-bot/YouTube" target="_blank" rel="noreferrer">Explore repository <span>↗</span></a></div></article>
+          <article class="project-card reveal"><div class="project-card-top"><span class="project-category">MUSIC UI</span><span class="project-number">12</span></div><div class="project-art art-spotify"><span class="spotify-mark">≋</span><span class="art-label">MUSIC / MOOD / PLAYLISTS</span></div><div class="project-card-body"><h3>Spotify Clone</h3><p>A music-streaming-inspired UI focused on playlist-style layouts and the visual patterns of a modern audio application.</p><div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a class="project-link" href="https://github.com/rajatsahani272-bot/Spotify-Clone" target="_blank" rel="noreferrer">Explore repository <span>↗</span></a></div></article>
+          <article class="project-card reveal"><div class="project-card-top"><span class="project-category">API / AUTHENTICATION</span><span class="project-number">13</span></div><div class="project-art art-task"><span class="task-check">✓</span><span class="art-label">PLAN / PRIORITIZE / COMPLETE</span></div><div class="project-card-body"><h3>Task Manager</h3><p>A task-management backend project for practicing RESTful routes, protected operations, and authentication-oriented API design.</p><div class="tag-list"><span>Node.js</span><span>REST API</span><span>JWT</span></div><a class="project-link" href="https://github.com/rajatsahani272-bot/Task-Manger" target="_blank" rel="noreferrer">Explore repository <span>↗</span></a></div></article>
+          <article class="project-card reveal"><div class="project-card-top"><span class="project-category">UTILITY / WEB</span><span class="project-number">14</span></div><div class="project-art art-currency"><span class="currency-pair">₹ <b>⇄</b> $</span><span class="art-label">CONVERT / COMPARE / CALCULATE</span></div><div class="project-card-body"><h3>Currency Converter</h3><p>A small utility project for converting between currencies and practicing user input, formatting, and API-driven web interactions.</p><div class="tag-list"><span>JavaScript</span><span>HTML</span><span>CSS</span></div><a class="project-link" href="https://github.com/rajatsahani272-bot/Currency-Conveter" target="_blank" rel="noreferrer">Explore repository <span>↗</span></a></div></article>
         </div>
-      </div>
-      <div class="about-card-item">
-        <div class="aci-icon">🐙</div>
-        <div class="aci-info">
-          <h4>GitHub Experience</h4>
-          <p>I maintain an active GitHub profile where I share project code, structured READMEs, and feature updates to showcase end-to-end development work.</p>
+        <p class="projects-footnote">Project descriptions are concise portfolio summaries. Repository links lead to the source for implementation details and current status.</p>
+      </section>
+      <section class="highlights-section" id="experience"><div class="section-wrap content-section">
+        <div class="section-heading reveal"><div><p class="section-label">MILESTONES & MOMENTUM</p><h2>Learning by <span>building.</span></h2></div><p class="section-aside">Hackathons and hands-on projects keep my learning grounded in real constraints.</p></div>
+        <div class="milestone-grid">
+          <article class="milestone reveal"><span class="milestone-label">HACKATHONS</span><h3>Build under pressure</h3><p>Participated in hackathon experiences including Hackcraft 3.0 and Smart India Hackathon 2025, practicing rapid problem-solving and team delivery.</p></article>
+          <article class="milestone reveal"><span class="milestone-label">PROJECT WORK</span><h3>From UI to deployment</h3><p>Building across frontend, backend, databases, and deployment — learning how the parts of a real application fit together.</p></article>
+          <article class="milestone reveal"><span class="milestone-label">NEXT FRONTIER</span><h3>AI/ML + software engineering</h3><p>Growing toward intelligent applications with stronger fundamentals in Python, machine learning, APIs, security, and system design.</p></article>
         </div>
-      </div>
-    </div>
+      </div></section>
+      <section class="section-wrap contact-section content-section" id="contact"><div class="contact-panel reveal">
+        <div class="contact-copy"><p class="section-label">HAVE A GOOD PROBLEM?</p><h2>Let's make<br><span>something useful.</span></h2><p>I'm open to internship opportunities, collaborations, and conversations about thoughtful software. Tell me what you're working on.</p><a class="button button-light" href="mailto:rajatsahani272@gmail.com?subject=Let's%20connect">Start a conversation <span>↗</span></a></div>
+        <div class="contact-details"><a href="mailto:rajatsahani272@gmail.com"><span>Email</span><strong>rajatsahani272@gmail.com ↗</strong></a><a href="https://github.com/rajatsahani272-bot" target="_blank" rel="noreferrer"><span>GitHub</span><strong>@rajatsahani272-bot ↗</strong></a><a href="https://www.linkedin.com/in/rajat-sahani-705044372" target="_blank" rel="noreferrer"><span>LinkedIn</span><strong>Connect with me ↗</strong></a></div>
+      </div></section>
+    </main>
+    <footer class="site-footer section-wrap"><a class="footer-brand" href="#top">rs.</a><p>Designed & built by Rajat Sahani</p><a href="#top">Back to top ↑</a><span>© <span id="year">2026</span></span></footer>
   </div>
-</section>
-
-<section id="skills">
-  <div class="section-header reveal">
-    <span class="section-num">02 /</span>
-    <h2 class="section-title">Skills</h2>
-    <div class="section-line"></div>
-  </div>
-  <div class="skills-grid">
-    <div class="skill-category reveal">
-      <div class="skill-cat-title">MERN Stack</div>
-      <div class="skill-bar-wrap">
-        <div class="skill-bar-item">
-          <div class="skill-bar-label"><span>MongoDB</span><span>88%</span></div>
-          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
-        </div>
-        <div class="skill-bar-item">
-          <div class="skill-bar-label"><span>Express.js</span><span>85%</span></div>
-          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
-        </div>
-        <div class="skill-bar-item">
-          <div class="skill-bar-label"><span>React.js</span><span>90%</span></div>
-          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
-        </div>
-        <div class="skill-bar-item">
-          <div class="skill-bar-label"><span>Node.js</span><span>87%</span></div>
-          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="87"></div></div>
-        </div>
-      </div>
-    </div>
-    <div class="skill-category reveal">
-      <div class="skill-cat-title">Languages</div>
-      <div class="skill-tags">
-        <span class="skill-tag">JavaScript</span>
-        <span class="skill-tag">Python</span>
-        <span class="skill-tag">Java</span>
-        <span class="skill-tag">C</span>
-        <span class="skill-tag">HTML5</span>
-        <span class="skill-tag">CSS3</span>
-      </div>
-    </div>
-    <div class="skill-category reveal">
-      <div class="skill-cat-title">Tools & Platforms</div>
-      <div class="skill-tags">
-        <span class="skill-tag">Git</span>
-        <span class="skill-tag">VS Code</span>
-        <span class="skill-tag">Netlify</span>
-        <span class="skill-tag">Vercel</span>
-        <span class="skill-tag">GitHub</span>
-        <span class="skill-tag">REST APIs</span>
-      </div>
-    </div>
-    <div class="skill-category reveal">
-      <div class="skill-cat-title">Currently Learning</div>
-      <div class="skill-tags">
-        <span class="skill-tag">Machine Learning</span>
-        <span class="skill-tag">TensorFlow</span>
-        <span class="skill-tag">TypeScript</span>
-        <span class="skill-tag">Docker</span>
-        <span class="skill-tag">System Design</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="projects">
-  <div class="section-header reveal">
-    <span class="section-num">03 /</span>
-    <h2 class="section-title">Projects</h2>
-    <div class="section-line"></div>
-  </div>
-  <p class="projects-intro reveal">I share all major builds with descriptions on my GitHub profile: <a href="https://github.com/rajatsahani272-bot" target="_blank" rel="noopener noreferrer">github.com/rajatsahani272-bot</a>.</p>
-  <div class="projects-grid">
-    <div class="project-card reveal">
-      <div class="project-num">PROJECT_01</div>
-      <h3>YouTube Clone</h3>
-      <p>A responsive YouTube-inspired frontend with video layout components, channel pages, and smooth playback-focused interactions using core web technologies.</p>
-      <div class="project-tags">
-        <span class="project-tag">HTML</span>
-        <span class="project-tag">CSS3</span>
-        <span class="project-tag">JavaScript</span>
-      </div>
-      <div class="project-btns">
-        <a href="#" class="project-btn live">Live ↗</a>
-        <a href="https://github.com/rajatsahani272-bot" target="_blank" rel="noopener noreferrer" class="project-btn code">Code &lt;/&gt;</a>
-      </div>
-    </div>
-    <div class="project-card reveal">
-      <div class="project-num">PROJECT_02</div>
-      <h3>Spotify Clone</h3>
-      <p>A Spotify-style music player interface featuring playlist interactions, track progress controls, and polished animations in a faithful dark-theme experience.</p>
-      <div class="project-tags">
-        <span class="project-tag">HTML</span>
-        <span class="project-tag">CSS</span>
-        <span class="project-tag">JavaScript</span>
-      </div>
-      <div class="project-btns">
-        <a href="#" class="project-btn live">Live ↗</a>
-        <a href="https://github.com/rajatsahani272-bot" target="_blank" rel="noopener noreferrer" class="project-btn code">Code &lt;/&gt;</a>
-      </div>
-    </div>
-    <div class="project-card reveal">
-      <div class="project-num">PROJECT_03</div>
-      <h3>Student Help & Resource Platform</h3>
-      <p>A centralized student platform for curated notes, academic resources, and peer support, designed to reduce search time and improve learning access.</p>
-      <div class="project-tags">
-        <span class="project-tag">MERN</span>
-        <span class="project-tag">MongoDB</span>
-        <span class="project-tag">Auth</span>
-      </div>
-      <div class="project-btns">
-        <a href="#" class="project-btn live">Live ↗</a>
-        <a href="https://github.com/rajatsahani272-bot" target="_blank" rel="noopener noreferrer" class="project-btn code">Code &lt;/&gt;</a>
-      </div>
-    </div>
-    <div class="project-card reveal">
-      <div class="project-num">PROJECT_04</div>
-      <h3>BedSync</h3>
-      <p>A real-time hospital bed tracking solution that helps staff and patients monitor availability, raise requests, and improve emergency resource coordination.</p>
-      <div class="project-tags">
-        <span class="project-tag">Node.js</span>
-        <span class="project-tag">MongoDB</span>
-        <span class="project-tag">Real-time</span>
-      </div>
-      <div class="project-btns">
-        <a href="#" class="project-btn live">Live ↗</a>
-        <a href="https://github.com/rajatsahani272-bot" target="_blank" rel="noopener noreferrer" class="project-btn code">Code &lt;/&gt;</a>
-      </div>
-    </div>
-    <div class="project-card reveal">
-      <div class="project-num">PROJECT_05</div>
-      <h3>StudySync</h3>
-      <p>A student productivity suite with scheduling, progress analytics, study timers, and collaboration features to support disciplined and measurable study routines.</p>
-      <div class="project-tags">
-        <span class="project-tag">Node.js</span>
-        <span class="project-tag">Express</span>
-        <span class="project-tag">MongoDB</span>
-      </div>
-      <div class="project-btns">
-        <a href="#" class="project-btn live">Live ↗</a>
-        <a href="https://github.com/rajatsahani272-bot" target="_blank" rel="noopener noreferrer" class="project-btn code">Code &lt;/&gt;</a>
-      </div>
-    </div>
-    <div class="project-card reveal">
-      <div class="project-num">PROJECT_06</div>
-      <h3>Task Manager</h3>
-      <p>A secure RESTful task backend implementing JWT authentication, role-based authorization, protected CRUD endpoints, and middleware-first API security practices.</p>
-      <div class="project-tags">
-        <span class="project-tag">Node.js</span>
-        <span class="project-tag">JWT</span>
-        <span class="project-tag">Security</span>
-      </div>
-      <div class="project-btns">
-        <a href="#" class="project-btn live">Live ↗</a>
-        <a href="https://github.com/rajatsahani272-bot" target="_blank" rel="noopener noreferrer" class="project-btn code">Code &lt;/&gt;</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="achievements">
-  <div class="section-header reveal">
-    <span class="section-num">04 /</span>
-    <h2 class="section-title">Achievements</h2>
-    <div class="section-line"></div>
-  </div>
-  <div class="timeline">
-    <div class="timeline-item reveal">
-      <div class="timeline-dot"></div>
-      <div class="timeline-card">
-        <span class="timeline-badge">HACKCRAFT 3.0 · 2026</span>
-        <h3>Hackcraft 3.0 Participant</h3>
-        <p>Competed in Hackcraft 3.0, a premier national-level hackathon. Developed and pitched an innovative solution within 24 hours, demonstrating rapid prototyping and full-stack capabilities under pressure.</p>
-      </div>
-    </div>
-    <div class="timeline-item reveal">
-      <div class="timeline-dot"></div>
-      <div class="timeline-card">
-        <span class="timeline-badge">SIH · 2025</span>
-        <h3>Smart India Hackathon 2025</h3>
-        <p>Selected participant in Smart India Hackathon 2025 — India's largest national-level hackathon. Competed with a team to solve real government problem statements using technology-driven solutions.</p>
-      </div>
-    </div>
-    <div class="timeline-item reveal">
-      <div class="timeline-dot"></div>
-      <div class="timeline-card">
-        <span class="timeline-badge">🏆 3RD RANK · COLLEGE</span>
-        <h3>3rd Rank — College Hackathon</h3>
-        <p>Secured 3rd position in the college-level hackathon. Designed and deployed a full-stack project that impressed judges with its technical depth, real-world applicability, and presentation quality.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="contact">
-  <div class="section-header reveal">
-    <span class="section-num">05 /</span>
-    <h2 class="section-title">Contact</h2>
-    <div class="section-line"></div>
-  </div>
-  <div class="contact-wrap">
-    <div class="contact-info reveal">
-      <h3>Let's Build Something.</h3>
-      <p>Open to internships, collaborations, and full-time opportunities. If you have a project worth building or a team worth joining — reach out.</p>
-      <div class="contact-links">
-        <a href="mailto:rajatsahani272@gmail.com" class="contact-link">
-          <div class="cl-icon">✉️</div>
-          <span class="cl-text">rajatsahani272@gmail.com</span>
-        </a>
-        <a href="tel:9682446942" class="contact-link">
-          <div class="cl-icon">📱</div>
-          <span class="cl-text">+91 9682446942</span>
-        </a>
-        <a href="https://github.com/rajatsahani272-bot" target="_blank" rel="noopener noreferrer" class="contact-link">
-          <div class="cl-icon">🐙</div>
-          <span class="cl-text">github.com/rajatsahani272-bot</span>
-        </a>
-        <a href="https://www.linkedin.com/in/rajat-sahani-705044372" target="_blank" rel="noopener noreferrer" class="contact-link">
-          <div class="cl-icon">💼</div>
-          <span class="cl-text">linkedin.com/in/rajat-sahani</span>
-        </a>
-        <a href="https://wa.me/9682446942" target="_blank" rel="noopener noreferrer" class="contact-link">
-          <div class="cl-icon">💬</div>
-          <span class="cl-text">WhatsApp me</span>
-        </a>
-      </div>
-    </div>
-    <div class="contact-form reveal">
-      <div class="form-group">
-        <label>Name</label>
-        <input type="text" placeholder="Your name"/>
-      </div>
-      <div class="form-group">
-        <label>Email</label>
-        <input type="email" placeholder="your@email.com"/>
-      </div>
-      <div class="form-group">
-        <label>Subject</label>
-        <input type="text" placeholder="What's this about?"/>
-      </div>
-      <div class="form-group">
-        <label>Message</label>
-        <textarea placeholder="Your message here..."></textarea>
-      </div>
-      <button class="form-submit" onclick="handleSubmit(this)">Send Message →</button>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <p>Designed & Built by <span>Rajat Sahani</span> · © 2026 · All systems operational</p>
-</footer>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
-<script src="script.js"></script>
 </body>
 </html>
